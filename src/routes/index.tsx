@@ -151,16 +151,20 @@ function Invitation() {
           />
 
           <main className="relative z-10 w-full pb-24">
-            {/* ── I. HERO — the Mughal arch ── */}
-<section className="relative mx-auto min-h-[850px] w-full max-w-3xl px-5 pt-[12vh] pb-6 text-center sm:min-h-0 sm:px-8">              <img
-                aria-hidden
-                src={art.arch.src}
-                alt=""
-                width={art.arch.w}
-                height={art.arch.h}
-                decoding="async"
-<section className="relative mx-auto min-h-[850px] w-full max-w-3xl px-0 pt-[12vh] pb-6 text-center sm:min-h-0 sm:px-8"></section>           />
-<div className="relative pt-24 sm:pt-32">
+{/* ── I. HERO — the Mughal arch ── */}
+<section className="relative mx-auto min-h-[850px] w-full max-w-3xl px-0 pt-[12vh] pb-6 text-center sm:min-h-0 sm:px-8">
+
+  <img
+    aria-hidden
+    src={art.arch.src}
+    alt=""
+    width={art.arch.w}
+    height={art.arch.h}
+    decoding="async"
+    className="pointer-events-none absolute -top-4 left-1/2 h-[760px] w-auto max-w-none -translate-x-1/2 opacity-95 sm:h-auto sm:w-[122%]"
+  />
+
+  <div className="relative pt-24 sm:pt-32">
   <Reveal delay={100}>
   <p className="mx-auto max-w-[20rem] rounded-full bg-card/70 px-5 py-3 text-sm leading-relaxed tracking-[0.18em] text-ink/80 uppercase backdrop-blur-sm sm:max-w-lg sm:text-base">
     {invite.invitationLine}
