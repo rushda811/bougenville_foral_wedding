@@ -378,20 +378,6 @@ className="text-gold-deep block text-5xl sm:text-8xl"                  />
 
          {/* ── XII. MONOGRAM — the seal ── */}
 <section className="relative mt-40 text-center">
-  <Reveal variant="scale">
-    <div className="glass relative mx-auto flex h-32 w-32 items-center justify-center rounded-full border border-gold/60 sm:h-40 sm:w-40">
-      <span
-        aria-hidden
-        className="animate-pulse-ring absolute inset-0 rounded-full border border-gold/40"
-      />
-
-      <span className="font-display text-gold text-4xl sm:text-5xl">
-        {invite.brideInitial}
-        <span className="font-script text-2xl text-primary"> &amp; </span>
-        {invite.groomInitial}
-      </span>
-    </div>
-  </Reveal>
 
   <Reveal delay={180} className="mt-10">
     <p className="mx-auto max-w-md px-8 font-script text-3xl text-primary sm:text-4xl">
@@ -401,33 +387,35 @@ className="text-gold-deep block text-5xl sm:text-8xl"                  />
 
   <Ornament className="mt-10" />
 
-  <footer className="mt-24 sm:mt-32">
-    <Reveal>
-      <div className="mx-auto h-px w-48 gold-rule sm:w-72" />
+ <footer className="mt-24 sm:mt-32">
+  <Reveal>
+    <div className="mx-auto h-px w-48 rule-gold sm:w-72" />
 
-      <div className="mt-10 flex flex-col items-center text-center">
-        <span
-          className="[font-family:'Cinzel',serif] text-[8px] uppercase tracking-[0.5em] text-[#9fc0f0]/60 sm:text-[9px]"
-        >
-          Crafted by
-        </span>
+    <div className="mt-10 flex flex-col items-center text-center">
+      <span
+        className="font-serif text-[9px] uppercase tracking-[0.42em] text-gold-deep/80 sm:text-[10px]"
+      >
+        Crafted by
+      </span>
 
-        <span
-          className="gold-text mt-3 [font-family:'Italianno',cursive] text-5xl leading-[1.3] sm:text-6xl"
-          style={{
-            animation:
-              "shimmer 7s linear infinite, breathe 6s ease-in-out infinite",
-          }}
-        >
-          Aurelle Vows
-        </span>
+      <span
+        className="text-gold mt-3 font-script text-5xl leading-[1.3] sm:text-6xl"
+        style={{
+          animation:
+            "gold-sheen 9s ease-in-out infinite",
+        }}
+      >
+        Aurelle Vows
+      </span>
 
-        <span className="mt-2 [font-family:'Cinzel',serif] text-[9px] uppercase tracking-[0.42em] text-[#e6c877]/55">
-          Bespoke Wedding Invitations
-        </span>
-      </div>
-    </Reveal>
-  </footer>
+      <span
+        className="mt-3 font-serif text-[9px] uppercase tracking-[0.3em] text-primary/70 sm:text-[10px]"
+      >
+        Bespoke Wedding Invitations
+      </span>
+    </div>
+  </Reveal>
+</footer>
   </section>
 </main>
         </>
