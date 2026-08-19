@@ -162,12 +162,12 @@ function Invitation() {
                 decoding="async"
                 className="pointer-events-none absolute -top-4 left-1/2 w-[122%] max-w-none -translate-x-1/2 opacity-95"
               />
-              <div className="relative pt-16 sm:pt-24">
-                <Reveal delay={100}>
-                  <p className="mx-auto max-w-[15rem] rounded-full bg-card/70 px-4 py-2 text-[10px] leading-relaxed tracking-royal text-ink/80 uppercase backdrop-blur-sm sm:max-w-md">
-                    {invite.invitationLine}
-                  </p>
-                </Reveal>
+<div className="relative pt-24 sm:pt-32">
+  <Reveal delay={100}>
+  <p className="mx-auto max-w-[20rem] rounded-full bg-card/70 px-5 py-3 text-sm leading-relaxed tracking-[0.18em] text-ink/80 uppercase backdrop-blur-sm sm:max-w-lg sm:text-base">
+    {invite.invitationLine}
+  </p>
+</Reveal>
 
 
                 <h1 className="mt-10 leading-[0.92]">
