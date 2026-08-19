@@ -160,10 +160,10 @@ function Invitation() {
 
           <main className="relative z-10 w-full pb-24">
 {/* ── I. HERO — the Mughal arch ── */}
-<section className="relative mx-auto w-full max-w-3xl px-0 pt-[12vh] pb-6 text-center sm:px-8">
+<section className="relative mx-auto min-h-[100svh] w-full max-w-3xl overflow-visible px-0 pt-0 text-center sm:min-h-0 sm:px-8">
 
   {/* ARCH BACKGROUND */}
-  <div className="pointer-events-none absolute inset-x-0 top-0 h-[850px] overflow-visible">
+  <div className="pointer-events-none absolute inset-0 z-0 overflow-visible">
     <img
       aria-hidden
       src={art.arch.src}
@@ -173,16 +173,18 @@ function Invitation() {
       decoding="async"
       className="
         absolute left-1/2 top-0
-        w-[100vw] max-w-none
+        w-[125vw] max-w-none
         -translate-x-1/2
         opacity-95
+
         sm:top-[-20px]
         sm:w-[122%]
       "
     />
   </div>
 
-  <div className="relative pt-24 sm:pt-32">
+  {/* HERO CONTENT */}
+  <div className="relative z-10 flex min-h-[100svh] flex-col items-center px-5 pt-[12vh] pb-10 sm:min-h-0 sm:px-0 sm:pt-32">
 
     <Reveal delay={100}>
       <p className="mx-auto max-w-[20rem] rounded-full bg-card/70 px-5 py-3 text-sm leading-relaxed tracking-[0.18em] text-ink/80 uppercase backdrop-blur-sm sm:max-w-lg sm:text-base">
@@ -216,7 +218,7 @@ function Invitation() {
       <GoldRule label="are getting married" />
     </div>
 
-    <Reveal delay={200} className="mt-10">
+    <Reveal delay={200} className="mt-10 w-full">
       <div className="glass lux-shadow relative mx-auto flex max-w-md items-center justify-center gap-5 px-6 py-7 sm:gap-7 sm:px-8 sm:py-8">
 
         <GildedCorners size="w-12 sm:w-20" />
