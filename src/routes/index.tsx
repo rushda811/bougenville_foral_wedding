@@ -170,8 +170,8 @@ function Invitation() {
 </Reveal>
 
 
-<h1 className="mt-24 leading-[0.92]">              
-<Kinetic
+<h1 className="mt-16 leading-[0.92] sm:mt-24">
+  <Kinetic
   text={invite.groomFirst.toUpperCase()}
   delay={520}
   className="text-gold-deep block text-5xl sm:text-8xl"
