@@ -162,26 +162,29 @@ function Invitation() {
 {/* ── I. HERO — the Mughal arch ── */}
 <section className="relative mx-auto min-h-[100svh] w-full max-w-3xl overflow-visible px-0 pt-0 text-center sm:min-h-0 sm:px-8">
 
-  {/* ARCH BACKGROUND */}
-  <div className="pointer-events-none absolute inset-0 z-0 overflow-visible">
-    <img
-      aria-hidden
-      src={art.arch.src}
-      alt=""
-      width={art.arch.w}
-      height={art.arch.h}
-      decoding="async"
-      className="
-        absolute left-1/2 top-0
-        w-[125vw] max-w-none
-        -translate-x-1/2
-        opacity-95
-
-        sm:top-[-20px]
-        sm:w-[122%]
-      "
-    />
-  </div>
+{/* ARCH BACKGROUND */}
+<div className="pointer-events-none absolute inset-x-0 top-0 z-0 h-[850px] overflow-hidden">
+  <img
+    aria-hidden
+    src={art.arch.src}
+    alt=""
+    width={art.arch.w}
+    height={art.arch.h}
+    decoding="async"
+    className="
+      absolute
+      left-1/2
+      top-0
+      h-auto
+      w-full
+      max-w-none
+      -translate-x-1/2
+      object-contain
+      opacity-95
+      sm:w-[700px]
+    "
+  />
+</div>
 
   {/* HERO CONTENT */}
   <div className="relative z-10 flex min-h-[100svh] flex-col items-center px-5 pt-[12vh] pb-10 sm:min-h-0 sm:px-0 sm:pt-32">
