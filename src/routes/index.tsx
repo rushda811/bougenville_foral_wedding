@@ -152,21 +152,26 @@ function Invitation() {
 
           <main className="relative z-10 w-full pb-24">
 {/* ── I. HERO — the Mughal arch ── */}
-<section className="relative mx-auto min-h-[850px] w-full max-w-3xl px-0 pt-[12vh] pb-6 text-center sm:min-h-0 sm:px-8">
+<section className="relative mx-auto w-full max-w-3xl px-0 pt-[12vh] pb-6 text-center sm:px-8">
 
-  <img
-    aria-hidden
-    src={art.arch.src}
-    alt=""
-    width={art.arch.w}
-    height={art.arch.h}
-    decoding="async"
-    className="pointer-events-none absolute left-1/2 top-[-4px] h-[760px] w-auto max-w-none -translate-x-1/2 opacity-95 sm:h-auto sm:w-[122%]"
-    style={{
-      transform: "translateX(-50%) scaleX(0.88)",
-      transformOrigin: "center top",
-    }}
-  />
+  {/* ARCH BACKGROUND */}
+  <div className="pointer-events-none absolute inset-x-0 top-0 h-[850px] overflow-hidden">
+    <img
+      aria-hidden
+      src={art.arch.src}
+      alt=""
+      width={art.arch.w}
+      height={art.arch.h}
+      decoding="async"
+      className="
+        absolute left-1/2 top-[-10px]
+        w-[108vw] max-w-none
+        -translate-x-1/2
+        opacity-95
+        sm:top-[-20px] sm:w-[122%]
+      "
+    />
+  </div>
 
   <div className="relative pt-24 sm:pt-32">
 
@@ -177,6 +182,7 @@ function Invitation() {
     </Reveal>
 
     <h1 className="mt-8 leading-[0.92] sm:mt-24">
+
       <Kinetic
         text={invite.groomFirst.toUpperCase()}
         delay={520}
@@ -194,6 +200,7 @@ function Invitation() {
         delay={520}
         className="text-gold-deep block text-5xl sm:text-8xl"
       />
+
     </h1>
 
     <div className="mt-10">
@@ -202,6 +209,7 @@ function Invitation() {
 
     <Reveal delay={200} className="mt-10">
       <div className="glass lux-shadow relative mx-auto flex max-w-md items-center justify-center gap-5 px-6 py-7 sm:gap-7 sm:px-8 sm:py-8">
+
         <GildedCorners size="w-12 sm:w-20" />
 
         <span className="text-base tracking-[0.18em] text-muted-foreground uppercase sm:text-xl">
@@ -217,6 +225,7 @@ function Invitation() {
           <br />
           {invite.dateLine.year}
         </span>
+
       </div>
     </Reveal>
 
