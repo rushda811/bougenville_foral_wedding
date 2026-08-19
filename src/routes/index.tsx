@@ -161,59 +161,67 @@ function Invitation() {
     width={art.arch.w}
     height={art.arch.h}
     decoding="async"
-    className="pointer-events-none absolute -top-4 left-1/2 h-[760px] w-auto max-w-none -translate-x-1/2 opacity-95 sm:h-auto sm:w-[122%]"
+    className="pointer-events-none absolute left-1/2 top-[-4px] h-[760px] w-auto max-w-none -translate-x-1/2 opacity-95 sm:h-auto sm:w-[122%]"
+    style={{
+      transform: "translateX(-50%) scaleX(0.88)",
+      transformOrigin: "center top",
+    }}
   />
 
   <div className="relative pt-24 sm:pt-32">
-  <Reveal delay={100}>
-  <p className="mx-auto max-w-[20rem] rounded-full bg-card/70 px-5 py-3 text-sm leading-relaxed tracking-[0.18em] text-ink/80 uppercase backdrop-blur-sm sm:max-w-lg sm:text-base">
-    {invite.invitationLine}
-  </p>
-</Reveal>
 
+    <Reveal delay={100}>
+      <p className="mx-auto max-w-[20rem] rounded-full bg-card/70 px-5 py-3 text-sm leading-relaxed tracking-[0.18em] text-ink/80 uppercase backdrop-blur-sm sm:max-w-lg sm:text-base">
+        {invite.invitationLine}
+      </p>
+    </Reveal>
 
-<h1 className="mt-8 leading-[0.92] sm:mt-24">
-  <Kinetic
-  text={invite.groomFirst.toUpperCase()}
-  delay={520}
-  className="text-gold-deep block text-5xl sm:text-8xl"
-/>
-                  <Reveal delay={420}>
-                    <span className="font-script my-1 block text-3xl text-primary sm:text-5xl">
-                      and
-                    </span>
-                  </Reveal>
-                  <Kinetic
-                    text={invite.brideFirst.toUpperCase()}
-                    delay={520}
-className="text-gold-deep block text-5xl sm:text-8xl"                  />
-                </h1>
+    <h1 className="mt-8 leading-[0.92] sm:mt-24">
+      <Kinetic
+        text={invite.groomFirst.toUpperCase()}
+        delay={520}
+        className="text-gold-deep block text-5xl sm:text-8xl"
+      />
 
-                <div className="mt-10">
-                  <GoldRule label="are getting married" />
-                </div>
+      <Reveal delay={420}>
+        <span className="font-script my-1 block text-3xl text-primary sm:text-5xl">
+          and
+        </span>
+      </Reveal>
 
-<Reveal delay={200} className="mt-10">
-  <div className="glass lux-shadow relative mx-auto flex max-w-md items-center justify-center gap-5 px-6 py-7 sm:gap-7 sm:px-8 sm:py-8">
-    <GildedCorners size="w-12 sm:w-20" />
+      <Kinetic
+        text={invite.brideFirst.toUpperCase()}
+        delay={520}
+        className="text-gold-deep block text-5xl sm:text-8xl"
+      />
+    </h1>
 
-    <span className="text-base tracking-[0.18em] text-muted-foreground uppercase sm:text-xl">
-      {invite.dateLine.day}
-    </span>
+    <div className="mt-10">
+      <GoldRule label="are getting married" />
+    </div>
 
-    <span className="font-display text-gold text-6xl sm:text-7xl">
-      {invite.dateLine.number}
-    </span>
+    <Reveal delay={200} className="mt-10">
+      <div className="glass lux-shadow relative mx-auto flex max-w-md items-center justify-center gap-5 px-6 py-7 sm:gap-7 sm:px-8 sm:py-8">
+        <GildedCorners size="w-12 sm:w-20" />
 
-    <span className="text-left text-base tracking-[0.18em] text-muted-foreground uppercase sm:text-xl">
-      {invite.dateLine.month}
-      <br />
-      {invite.dateLine.year}
-    </span>
+        <span className="text-base tracking-[0.18em] text-muted-foreground uppercase sm:text-xl">
+          {invite.dateLine.day}
+        </span>
+
+        <span className="font-display text-gold text-6xl sm:text-7xl">
+          {invite.dateLine.number}
+        </span>
+
+        <span className="text-left text-base tracking-[0.18em] text-muted-foreground uppercase sm:text-xl">
+          {invite.dateLine.month}
+          <br />
+          {invite.dateLine.year}
+        </span>
+      </div>
+    </Reveal>
+
   </div>
-</Reveal>
-              </div>
-            </section>
+</section>
 
             <BloomDivider />
 
