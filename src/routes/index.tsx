@@ -170,8 +170,7 @@ function Invitation() {
 </Reveal>
 
 
-                <h1 className="mt-10 leading-[0.92]">
-                  <Kinetic
+<h1 className="mt-24 leading-[0.92]">                  <Kinetic
                     text={invite.brideFirst.toUpperCase()}
                     className="text-gold block text-5xl sm:text-8xl"
                   />
