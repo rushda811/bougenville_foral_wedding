@@ -79,10 +79,21 @@ export function Gate({ onOpen }: { onOpen: () => void }) {
 
 
       {/* hanging, swinging strands */}
-      <div
-        data-open={open}
-        className="absolute inset-0 transition-transform duration-[2400ms] ease-[cubic-bezier(0.65,0,0.35,1)] data-[open=true]:scale-[2.6]"
-      >
+<div
+  data-open={open}
+  className="
+    absolute
+    top-0
+    left-1/2
+    h-full
+    w-[1000px]
+    -translate-x-1/2
+    transition-transform
+    duration-[2400ms]
+    ease-[cubic-bezier(0.65,0,0.35,1)]
+    data-[open=true]:scale-[2.6]
+  "
+>
         {strands.map((s) => {
           const dir = s.left < 50 ? -1 : 1;
           return (
