@@ -45,7 +45,7 @@ export function GoldRule({ label, tone = "gold" }: { label?: string; tone?: "gol
       <Reveal variant="line" className="rule-gold w-16 origin-right sm:w-28" />
       <span
         className={cn(
-"text-sm tracking-royal uppercase whitespace-nowrap"
+"text-sm tracking-royal uppercase whitespace-nowrap",
           tone === "gold" ? "text-gold-deep" : "text-gold-light",
         )}
       >

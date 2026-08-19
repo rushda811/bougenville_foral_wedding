@@ -61,17 +61,17 @@ function ChapterTitle({
 }) {
   return (
     <div className="text-center">
-      <Reveal>
-        <p
-        className={
-  tone === "dark"
-    ? "text-sm tracking-royal text-gold-light uppercase sm:text-base"
-    : "text-sm tracking-royal text-gold-deep uppercase sm:text-base"
-}
-        >
-          {eyebrow}
-        </p>
-      </Reveal>
+<Reveal>
+  <p
+    className={
+      tone === "dark"
+        ? "text-sm tracking-royal text-gold-light uppercase sm:text-base"
+        : "text-sm tracking-royal text-gold-deep uppercase sm:text-base"
+    }
+  >
+    {eyebrow}
+  </p>
+</Reveal>
       <Kinetic
         as="h2"
         text={title}
@@ -170,9 +170,12 @@ function Invitation() {
 </Reveal>
 
 
-<h1 className="mt-24 leading-[0.92]">                  <Kinetic
-                    text={invite.brideFirst.toUpperCase()}
-className="text-gold-deep block text-5xl sm:text-8xl"                  />
+<h1 className="mt-24 leading-[0.92]">              
+<Kinetic
+  text={invite.groomFirst.toUpperCase()}
+  delay={520}
+  className="text-gold-deep block text-5xl sm:text-8xl"
+/>
                   <Reveal delay={420}>
                     <span className="font-script my-1 block text-3xl text-primary sm:text-5xl">
                       and

@@ -157,10 +157,9 @@ export function Gate({ onOpen }: { onOpen: () => void }) {
         data-open={open}
         className="absolute inset-0 z-20 flex flex-col items-center justify-center px-8 text-center transition-all duration-[1100ms] ease-[cubic-bezier(0.19,1,0.22,1)] data-[open=true]:scale-[1.35] data-[open=true]:opacity-0"
       >
-        <p className={`gold-caps ${stagger(0)}`} style={delay(500)}>
-          An invitation awaits
-        </p>
-
+<p className={`gold-caps text-lg sm:text-xl ${stagger(0)}`} style={delay(500)}>
+  An invitation awaits
+</p>
         <span
           className={`relative mt-8 flex h-36 w-36 items-center justify-center sm:h-44 sm:w-44 ${stagger(0)}`}
           style={delay(760)}
