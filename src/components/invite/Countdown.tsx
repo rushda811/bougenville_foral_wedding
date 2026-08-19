@@ -62,17 +62,7 @@ export function Countdown({ date }: { date: string }) {
               className="flex items-center gap-1.5 sm:gap-4"
             >
               <div className="arch-cusp relative w-[66px] bg-card/45 px-1 pt-5 pb-4 text-center sm:w-[110px] sm:pt-8 sm:pb-6">
-                <span
-                  aria-hidden
-                  className="pointer-events-none absolute inset-0 overflow-hidden opacity-70"
-                >
-                  <span
-                    className="absolute inset-y-0 -left-1/3 block w-1/3 bg-gradient-to-r from-transparent via-gold-light to-transparent"
-                    style={{ animation: `shimmer-sweep 6s ${i * 0.8}s ease-in-out infinite` }}
-                  />
-                </span>
-                <div className="font-display text-gold text-4xl leading-none tabular-nums sm:text-6xl">
-                  {String(value).padStart(2, "0")}
+<div className="font-display text-gold-deep text-4xl leading-none tabular-nums sm:text-6xl">                  {String(value).padStart(2, "0")}
                 </div>
                 <div className="mx-auto mt-3 h-px w-6 bg-[image:var(--gradient-gold)] sm:w-10" />
                 <div className="mt-2.5 text-[8px] tracking-[0.28em] text-muted-foreground uppercase sm:text-[10px]">
