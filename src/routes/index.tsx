@@ -159,7 +159,7 @@ function Invitation() {
                 width={art.arch.w}
                 height={art.arch.h}
                 decoding="async"
-className="pointer-events-none absolute -top-4 left-1/2 w-full max-w-3xl -translate-x-1/2 object-contain opacity-95 sm:w-[122%] sm:max-w-none"              />
+className="pointer-events-none absolute -top-4 left-1/2 w-[108%] max-w-none -translate-x-1/2 opacity-95 sm:w-[122%]"          />
 <div className="relative pt-24 sm:pt-32">
   <Reveal delay={100}>
   <p className="mx-auto max-w-[20rem] rounded-full bg-card/70 px-5 py-3 text-sm leading-relaxed tracking-[0.18em] text-ink/80 uppercase backdrop-blur-sm sm:max-w-lg sm:text-base">
