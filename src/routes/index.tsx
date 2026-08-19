@@ -97,25 +97,24 @@ function Invitation() {
   const ambience = useAmbience();
 
  return (
-  <div
-    className="relative min-h-screen overflow-x-hidden"
-    style={{
-      backgroundImage: `radial-gradient(
+<div
+  className="relative min-h-screen overflow-x-hidden"
+  style={{
+    backgroundImage: `
+      radial-gradient(
         120% 90% at 50% 0%,
         oklch(0.99 0.012 90 / 0.58),
         oklch(0.975 0.02 88 / 0.66) 55%,
         oklch(0.955 0.03 82 / 0.72)
-      ), url(${art.paper.src})`,
-
-      backgroundSize: "auto, min(100vw, 676px) auto",
-
-      backgroundPosition: "center top, center top",
-
-      backgroundRepeat: "no-repeat, repeat-y",
-
-      backgroundAttachment: "scroll, scroll",
-    }}
-  >
+      ),
+      url(${art.paper.src})
+    `,
+    backgroundPosition: "center top, center top",
+    backgroundRepeat: "no-repeat, repeat-y",
+    backgroundAttachment: "scroll, scroll",
+    backgroundSize: "100% auto, max(676px, 100vw) auto",
+  }}
+>
 
       <Gate
         onOpen={() => {
@@ -161,9 +160,18 @@ function Invitation() {
           <main className="relative z-10 w-full pb-24">
 {/* ── I. HERO — the Mughal arch ── */}
 <section className="relative mx-auto min-h-[100svh] w-full max-w-3xl overflow-visible px-0 pt-0 text-center sm:min-h-0 sm:px-8">
-
 {/* ARCH BACKGROUND */}
-<div className="pointer-events-none absolute inset-x-0 top-0 z-0 h-[850px] overflow-hidden">
+<div
+  className="
+    pointer-events-none
+    absolute
+    inset-x-0
+    top-0
+    w-full
+    h-[850px]
+    overflow-hidden
+  "
+>
   <img
     aria-hidden
     src={art.arch.src}
@@ -175,13 +183,11 @@ function Invitation() {
       absolute
       left-1/2
       top-0
-      h-auto
       w-full
+      h-auto
       max-w-none
       -translate-x-1/2
-      object-contain
       opacity-95
-      sm:w-[700px]
     "
   />
 </div>
