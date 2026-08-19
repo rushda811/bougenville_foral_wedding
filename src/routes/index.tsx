@@ -182,7 +182,7 @@ function Invitation() {
                     </span>
                   </Reveal>
                   <Kinetic
-                    text={invite.groomFirst.toUpperCase()}
+                    text={invite.brideFirst.toUpperCase()}
                     delay={520}
 className="text-gold-deep block text-5xl sm:text-8xl"                  />
                 </h1>
@@ -218,23 +218,34 @@ className="text-gold-deep block text-5xl sm:text-8xl"                  />
             {/* ── II. THE COUPLE — two arch panels ── */}
             <section className="relative mx-auto w-full max-w-5xl px-5 sm:px-8">
               <ChapterTitle eyebrow="the beloved" title="Bride & Groom" script="two houses, one garden" />
-              <div className="mt-14 grid gap-16 sm:grid-cols-2 sm:gap-10">
-                {invite.couple.map((p, i) => (
-                  <ArchPanel key={p.name} tone={i === 0 ? "light" : "light"}>
-<p className="text-sm tracking-royal text-gold-deep uppercase sm:text-base">
-  {p.role}
-</p>
-                    <Kinetic
-                      as="h3"
-                      text={p.name}
-                      className="text-gold mt-4 block font-display text-4xl sm:text-5xl"
-                    />
-                    <Ornament className="mt-5" />
-                    <p className="mt-5 text-sm tracking-[0.14em] text-ink uppercase">{p.line}</p>
-                    <p className="mt-4 font-script text-xl text-primary sm:text-2xl">{p.note}</p>
-                  </ArchPanel>
-                ))}
-              </div>
+<div className="mt-14 grid w-full min-w-0 gap-16 sm:grid-cols-2 sm:gap-10">
+  {invite.couple.map((p) => (
+    <ArchPanel
+      key={p.name}
+      tone="light"
+      className="min-w-0 max-w-full overflow-hidden"
+    >
+      <p className="text-sm tracking-royal text-gold-deep uppercase sm:text-base">
+        {p.role}
+      </p>
+
+      <Kinetic
+        as="h3"
+        text={p.name}
+className="mt-4 block w-full max-w-full font-display text-[clamp(2rem,9vw,3rem)] leading-[1.05] text-gold"      />
+
+      <Ornament className="mt-5" />
+
+      <p className="mt-5 text-sm tracking-[0.14em] text-ink uppercase">
+        {p.line}
+      </p>
+
+      <p className="mt-4 font-script text-xl text-primary sm:text-2xl">
+        {p.note}
+      </p>
+    </ArchPanel>
+  ))}
+</div>
             </section>
 
             {/* ── III. THE VOW — dark chamber, chinoiserie ── */}
@@ -260,9 +271,9 @@ className="text-gold-deep block text-5xl sm:text-8xl"                  />
               <div className="relative mx-auto max-w-2xl px-6 pt-20 sm:pt-24">
                 <Reveal>
                   <Sparkles className="mx-auto h-4 w-4 text-gold" />
-                  <p className="mt-8 font-script text-3xl leading-snug text-gold-light sm:text-5xl">
-                    “{invite.quote.text}”
-                  </p>
+<p className="mt-8 px-2 font-script text-[clamp(1.8rem,7vw,3rem)] leading-[1.2] text-gold-light">
+  “{invite.quote.text}”
+</p>
                   <p className="mt-8 text-[10px] tracking-royal text-gold uppercase">
                     {invite.quote.source}
                   </p>
@@ -387,30 +398,25 @@ className="text-gold-deep block text-5xl sm:text-8xl"                  />
 
   <Ornament className="mt-10" />
 
- <footer className="mt-24 sm:mt-32">
+<footer className="mt-24 sm:mt-32">
   <Reveal>
     <div className="mx-auto h-px w-48 rule-gold sm:w-72" />
 
-    <div className="mt-10 flex flex-col items-center text-center">
-      <span
-        className="font-serif text-[9px] uppercase tracking-[0.42em] text-gold-deep/80 sm:text-[10px]"
-      >
+    <div className="mt-10 flex flex-col items-center text-center px-5">
+      <span className="font-serif text-[9px] uppercase tracking-[0.42em] text-gold-deep/80 sm:text-[10px]">
         Crafted by
       </span>
 
       <span
-        className="text-gold mt-3 font-script text-5xl leading-[1.3] sm:text-6xl"
+        className="mt-3 font-script text-5xl leading-[1.15] text-gold sm:text-6xl"
         style={{
-          animation:
-            "gold-sheen 9s ease-in-out infinite",
+          animation: "gold-sheen 9s ease-in-out infinite",
         }}
       >
         Aurelle Vows
       </span>
 
-      <span
-        className="mt-3 font-serif text-[9px] uppercase tracking-[0.3em] text-primary/70 sm:text-[10px]"
-      >
+      <span className="mt-3 font-serif text-[9px] uppercase tracking-[0.3em] text-ink/60 sm:text-[10px]">
         Bespoke Wedding Invitations
       </span>
     </div>

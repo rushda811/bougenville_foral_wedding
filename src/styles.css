@@ -351,10 +351,15 @@
 }
 
 /* Kinetic typography: per-letter stagger driven by --i */
+.kinetic {
+  max-width: 100%;
+  overflow-wrap: anywhere;
+}
+
 .kinetic > span {
   display: inline-block;
   opacity: 0;
-  white-space: pre;
+  white-space: normal;
 }
 .kinetic[data-visible="true"] > span {
   animation: letter-in 1.05s cubic-bezier(0.19, 1, 0.22, 1) forwards;
