@@ -112,9 +112,7 @@ function Invitation() {
     backgroundPosition: "center top, center top",
     backgroundRepeat: "no-repeat, repeat-y",
     backgroundAttachment: "scroll, scroll",
-
-    // Gradient + paper
-    backgroundSize: "100% auto, 676px auto",
+    backgroundSize: "100% auto, 100% auto",
   }}
 >
 
