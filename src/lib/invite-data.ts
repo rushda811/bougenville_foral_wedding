@@ -6,7 +6,7 @@ export const invite = {
   /** Wedding date & time (local) */
   date: "2027-03-06T18:30:00",
   dateLine: { day: "Saturday", month: "March", number: "6", year: "2027" },
-  invitationLine: "together with their families, request the honour of your presence",
+  invitationLine: "بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ",
   couple: [
     {
       name: "Jayne",
