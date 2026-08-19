@@ -163,7 +163,7 @@ function Invitation() {
 <section className="relative mx-auto w-full max-w-3xl px-0 pt-[12vh] pb-6 text-center sm:px-8">
 
   {/* ARCH BACKGROUND */}
-  <div className="pointer-events-none absolute inset-x-0 top-0 h-[850px] overflow-hidden">
+  <div className="pointer-events-none absolute inset-x-0 top-0 h-[850px] overflow-visible">
     <img
       aria-hidden
       src={art.arch.src}
@@ -172,11 +172,12 @@ function Invitation() {
       height={art.arch.h}
       decoding="async"
       className="
-        absolute left-1/2 top-[-10px]
-        w-[108vw] max-w-none
+        absolute left-1/2 top-0
+        w-[100vw] max-w-none
         -translate-x-1/2
         opacity-95
-        sm:top-[-20px] sm:w-[122%]
+        sm:top-[-20px]
+        sm:w-[122%]
       "
     />
   </div>
