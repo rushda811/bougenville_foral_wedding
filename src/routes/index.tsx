@@ -96,18 +96,26 @@ function Invitation() {
   const [opened, setOpened] = useState(false);
   const ambience = useAmbience();
 
-  return (
-    <div
-      className="relative min-h-screen overflow-x-hidden"
-      style={{
-        /* floral wallpaper across the whole invitation, softened under a cream wash */
-        backgroundImage: `radial-gradient(120% 90% at 50% 0%, oklch(0.99 0.012 90 / 0.58), oklch(0.975 0.02 88 / 0.66) 55%, oklch(0.955 0.03 82 / 0.72)), url(${art.paper.src})`,
-        backgroundSize: "auto, cover",
-        backgroundRepeat: "no-repeat, no-repeat",
-        backgroundAttachment: "fixed, fixed",
-      }}
-    >
+ return (
+  <div
+    className="relative min-h-screen overflow-x-hidden"
+    style={{
+      backgroundImage: `radial-gradient(
+        120% 90% at 50% 0%,
+        oklch(0.99 0.012 90 / 0.58),
+        oklch(0.975 0.02 88 / 0.66) 55%,
+        oklch(0.955 0.03 82 / 0.72)
+      ), url(${art.paper.src})`,
 
+      backgroundSize: "auto, min(100vw, 676px) auto",
+
+      backgroundPosition: "center top, center top",
+
+      backgroundRepeat: "no-repeat, repeat-y",
+
+      backgroundAttachment: "scroll, scroll",
+    }}
+  >
 
       <Gate
         onOpen={() => {
