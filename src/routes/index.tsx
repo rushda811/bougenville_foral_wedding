@@ -165,12 +165,13 @@ className="
   absolute
   left-1/2
   top-8
-  w-full
+  w-[108%]
   h-auto
   max-w-none
   -translate-x-1/2
   opacity-95
   sm:top-0
+  sm:w-full
 "
 >
   <img
