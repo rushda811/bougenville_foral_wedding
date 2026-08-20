@@ -222,10 +222,9 @@ className="
       />
 
     </h1>
-
-    <div className="mt-10">
-      <GoldRule label="are getting married" />
-    </div>
+<div className="mt-14 sm:mt-10">
+  <GoldRule label="are getting married" />
+</div>
 
     <Reveal delay={200} className="mt-10 w-full">
       <div className="glass lux-shadow relative mx-auto flex max-w-md items-center justify-center gap-5 px-6 py-7 sm:gap-7 sm:px-8 sm:py-8">
