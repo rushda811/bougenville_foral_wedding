@@ -161,15 +161,17 @@ function Invitation() {
 {/* ── I. HERO — the Mughal arch ── */}
 <section className="relative mx-auto w-full max-w-3xl overflow-visible px-0 pt-0 text-center sm:px-8">{/* ARCH BACKGROUND */}
 <div
-  className="
-    pointer-events-none
-    absolute
-    inset-x-0
-    top-0
-    w-full
-    h-[850px]
-    overflow-hidden
-  "
+className="
+  absolute
+  left-1/2
+  top-8
+  w-full
+  h-auto
+  max-w-none
+  -translate-x-1/2
+  opacity-95
+  sm:top-0
+"
 >
   <img
     aria-hidden
