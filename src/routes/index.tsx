@@ -159,8 +159,7 @@ function Invitation() {
 
           <main className="relative z-10 w-full pb-24">
 {/* ── I. HERO — the Mughal arch ── */}
-<section className="relative mx-auto min-h-[100svh] w-full max-w-3xl overflow-visible px-0 pt-0 text-center sm:min-h-0 sm:px-8">
-{/* ARCH BACKGROUND */}
+<section className="relative mx-auto w-full max-w-3xl overflow-visible px-0 pt-0 text-center sm:px-8">{/* ARCH BACKGROUND */}
 <div
   className="
     pointer-events-none
@@ -193,8 +192,7 @@ function Invitation() {
 </div>
 
   {/* HERO CONTENT */}
-  <div className="relative z-10 flex min-h-[100svh] flex-col items-center px-5 pt-[12vh] pb-10 sm:min-h-0 sm:px-0 sm:pt-32">
-
+<div className="relative z-10 flex flex-col items-center px-5 pt-[18vh] pb-8 sm:px-0 sm:pt-32 sm:pb-10">
     <Reveal delay={100}>
       <p className="mx-auto max-w-[20rem] rounded-full bg-card/70 px-5 py-3 text-sm leading-relaxed tracking-[0.18em] text-ink/80 uppercase backdrop-blur-sm sm:max-w-lg sm:text-base">
         {invite.invitationLine}
