@@ -232,16 +232,14 @@ className="
 
         <GildedCorners size="w-12 sm:w-20" />
 
-        <span className="text-base tracking-[0.18em] text-muted-foreground uppercase sm:text-xl">
-          {invite.dateLine.day}
+<span className="text-base font-bold tracking-[0.14em] text-ink uppercase sm:text-xl">          {invite.dateLine.day}
         </span>
 
         <span className="font-display text-gold text-6xl sm:text-7xl">
           {invite.dateLine.number}
         </span>
 
-        <span className="text-left text-base tracking-[0.18em] text-muted-foreground uppercase sm:text-xl">
-          {invite.dateLine.month}
+<span className="text-left text-base font-bold tracking-[0.14em] text-ink uppercase sm:text-xl">          {invite.dateLine.month}
           <br />
           {invite.dateLine.year}
         </span>
@@ -254,38 +252,44 @@ className="
 
             <BloomDivider />
 
-            {/* ── II. THE COUPLE — two arch panels ── */}
-            <section className="relative mx-auto w-full max-w-5xl px-5 sm:px-8">
-              <ChapterTitle eyebrow="the beloved" title="Bride & Groom" script="two houses, one garden" />
-<div className="mt-14 grid w-full min-w-0 gap-16 sm:grid-cols-2 sm:gap-10">
-  {invite.couple.map((p) => (
-    <ArchPanel
-      key={p.name}
-      tone="light"
-      className="min-w-0 max-w-full overflow-hidden"
-    >
-      <p className="text-sm tracking-royal text-gold-deep uppercase sm:text-base">
-        {p.role}
-      </p>
+{/* ── II. THE COUPLE — two arch panels ── */}
+<section className="relative mx-auto w-full max-w-5xl px-5 sm:px-8">
+  <ChapterTitle
+    eyebrow="the beloved"
+    title="Bride & Groom"
+    script="two houses, one garden"
+  />
 
-      <Kinetic
-        as="h3"
-        text={p.name}
-className="mt-4 block w-full max-w-full font-display text-[clamp(2rem,9vw,3rem)] leading-[1.05] text-gold"      />
+  <div className="mt-14 grid w-full min-w-0 gap-16 sm:grid-cols-2 sm:gap-10">
+    {invite.couple.map((p) => (
+      <ArchPanel
+        key={p.name}
+        tone="light"
+        className="min-w-0 max-w-full overflow-hidden"
+      >
+        <p className="text-base font-bold tracking-[0.16em] text-gold-deep uppercase">
+          {p.role}
+        </p>
 
-      <Ornament className="mt-5" />
+        <Kinetic
+          as="h3"
+          text={p.name}
+          className="mt-4 block w-full max-w-full font-display text-[clamp(2.3rem,11vw,3.4rem)] font-bold leading-[1.05] text-gold-deep"
+        />
 
-      <p className="mt-5 text-sm tracking-[0.14em] text-ink uppercase">
-        {p.line}
-      </p>
+        <Ornament className="mt-5" />
 
-      <p className="mt-4 font-script text-xl text-primary sm:text-2xl">
-        {p.note}
-      </p>
-    </ArchPanel>
-  ))}
-</div>
-            </section>
+        <p className="mt-5 text-base font-semibold tracking-[0.10em] text-ink uppercase">
+          {p.line}
+        </p>
+
+        <p className="mt-4 font-script text-2xl font-semibold text-primary sm:text-2xl">
+          {p.note}
+        </p>
+      </ArchPanel>
+    ))}
+  </div>
+</section>
 
             {/* ── III. THE VOW — dark chamber, chinoiserie ── */}
             <section className="rose-panel relative mt-28 overflow-hidden py-24 text-center sm:py-32">
@@ -366,7 +370,7 @@ className="mt-4 block w-full max-w-full font-display text-[clamp(2rem,9vw,3rem)]
                             className="h-44 w-full object-cover transition-transform duration-[1200ms] group-hover:scale-110 sm:h-64"
                           />
                         </div>
-                        <figcaption className="mt-4 text-center text-[9px] tracking-[0.22em] text-gold-light uppercase">
+                        <figcaption className="mt-4 text-center text-xs font-bold tracking-[0.14em] text-gold-light uppercase sm:text-sm">
                           {g.caption}
                         </figcaption>
                       </figure>
@@ -379,8 +383,7 @@ className="mt-4 block w-full max-w-full font-display text-[clamp(2rem,9vw,3rem)]
             {/* ── IX. VENUE — the palace gates ── */}
             <section className="relative mx-auto mt-28 w-full max-w-3xl px-5 text-center sm:px-8">
               <ArchPanel>
-                <p className="text-[10px] tracking-royal text-gold-deep uppercase">
-                  where it all happens
+<p className="text-sm font-bold tracking-[0.16em] text-gold-deep uppercase sm:text-base">                  where it all happens
                 </p>
                 <Kinetic
                   as="h2"
@@ -388,8 +391,7 @@ className="mt-4 block w-full max-w-full font-display text-[clamp(2rem,9vw,3rem)]
                   delay={120}
                   className="mt-6 block font-display text-3xl text-ink sm:text-5xl"
                 />
-                <p className="mx-auto mt-4 max-w-sm text-sm leading-relaxed text-muted-foreground">
-                  {invite.venue.address}
+<p className="mx-auto mt-4 max-w-sm text-base font-semibold leading-relaxed text-ink/80">                  {invite.venue.address}
                 </p>
 
                 <Ornament className="mt-8" />
@@ -398,7 +400,7 @@ className="mt-4 block w-full max-w-full font-display text-[clamp(2rem,9vw,3rem)]
                   href={mapsUrl}
                   target="_blank"
                   rel="noreferrer"
-                  className="gold-glow mt-8 inline-flex items-center gap-3 border border-gold px-7 py-4 text-[11px] tracking-royal text-gold-deep uppercase transition-transform hover:scale-[1.03]"
+                  className="gold-glow mt-8 inline-flex items-center gap-3 border border-gold px-7 py-4 text-sm font-bold tracking-[0.14em] text-gold-deep uppercase transition-transform hover:scale-[1.03]"
                 >
                   <MapPin className="h-4 w-4" />
                   Open in Google Maps
@@ -442,7 +444,7 @@ className="mt-4 block w-full max-w-full font-display text-[clamp(2rem,9vw,3rem)]
     <div className="mx-auto h-px w-48 rule-gold sm:w-72" />
 
     <div className="mt-10 flex flex-col items-center text-center px-5">
-      <span className="font-serif text-[9px] uppercase tracking-[0.42em] text-gold-deep/80 sm:text-[10px]">
+      <span className="font-serif text-xs font-bold uppercase tracking-[0.28em] text-gold-deep sm:text-sm">
         Crafted by
       </span>
 
@@ -455,8 +457,7 @@ className="mt-4 block w-full max-w-full font-display text-[clamp(2rem,9vw,3rem)]
         Aurelle Vows
       </span>
 
-      <span className="mt-3 font-serif text-[9px] uppercase tracking-[0.3em] text-ink/60 sm:text-[10px]">
-        Bespoke Wedding Invitations
+<span className="mt-3 font-serif text-xs font-semibold uppercase tracking-[0.2em] text-ink/80 sm:text-sm">        Bespoke Wedding Invitations
       </span>
     </div>
   </Reveal>
